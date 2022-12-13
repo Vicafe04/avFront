@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body onLoad="carregar()">
+    <header>
+        <span>CHAMADO</span>
+    </header>
+    <div class="list">
+        <div class="item-list model">
+            <p id="id">id</p>
+            <p id="tipo">tipo</p>
+            <p id="severidade">severidade</p>
+            <p id="descricao">descricao</p>
+            <p id="data">data</p>
+            <p id="hora">hora</p>
+            <p id="hora_inicio">hora_inicio</p>
+            <p id="hora_fim">hora_fim</p>
+            <p id="destino">destino</p>
+        </div>
+    </div>
+    <button>cadastrar</button>
+    <div class="top">
+        <div onclick="acao()" class="btn">Criar</div>
+            <div class="modal">
+                <div class="form" onclick="fechar()">
+                    <p class="fechar">X</p>
+                    <div class="tip">
+                        <div class="body-1">
+                            <p>Criar Chamado</p>
+                            <p>Tipo:</p>
+                            <input type="text" id="tipoCad">
+                        </div>
+                        <br>
+                        <div class="body-2">
+                            <p>Severidade:</p>
+                            <p>3-Normal <br> 2-Grave <br> 1-Urgente</p>
+                            <input type="text" id="severCad">
+                        </div>
+                        <br>
+                        <div class="body-3">
+                            <p>Descrição:</p>
+                            <input class="descCad" type="text">
+                        </div>
+                        <br>
+                        <div class="body-4">
+                            <p>Destino:</p>
+                            <input type="text" id="destinoCad">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button>deletar</button>
+</body>
+<script src="./script.js"></script>
+</html>

@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgb(196, 196, 196);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+span{
+    font-size: 50px;
+}
+
+.list{
+    
+    margin: 10px;
+}
+
+.item-list{
+    display: flex;
+    flex-direction: row;
+}
+
+#id,
+#tipo,
+#severidade,
+#descricao,
+#data,
+#hora,
+#hora_inicio,
+#hora_fim,
+#destino{
+    display: flex;
+    width: 220px;
+    border: 1px solid black;
+}
+
+.btn{
+    padding: 10px;
+    background-color: gray;
+    color: black;
+    display: inline-block;
+    position: absolute;
+    top: 40%;
+    right: 3%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.form{
+    margin: 50px;
+}
+
+.modal{
+    width: 300px;
+    height: 400px;
+    background-color: rgb(156, 156, 156);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    animation-duration: 800ms;
+    border-radius: 20px;
+    border: 2px solid white;
+}
